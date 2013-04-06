@@ -14,7 +14,7 @@
 use strict;
 
 while(1){
-    opendir my $DIR , '/proc' or die "can't open th directory:$!\n";
+    opendir my $DIR , '/proc' or die "can't open the directory:$!\n";
     my @names = readdir $DIR or "can't read dir:$!\n";
     my @names_num;
     foreach (@names){
